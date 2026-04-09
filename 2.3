@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Đăng ký mua hoa</title>
+<style>
+    body {font-family: Arial;}
+    .main {
+        width: 900px;
+        margin: auto;
+        border: 1px solid #ccc;
+        display: flex;
+    }
+    .left {
+        width: 150px;
+        padding: 10px;
+    }
+    .left ul {list-style: none; padding: 0;}
+    .left li {margin: 8px 0; color: red;}
+    
+    .content {
+        flex: 1;
+        padding: 10px;
+    }
+    h3 {
+        background: black;
+        color: white;
+        text-align: center;
+        padding: 5px;
+    }
+    .row {
+        margin: 5px 0;
+    }
+    input, select, textarea {
+        width: 100%;
+        padding: 4px;
+    }
+    .right {
+        width: 200px;
+        padding: 10px;
+        text-align: center;
+    }
+    button {margin-top: 5px;}
+</style>
+</head>
+
+<body>
+
+<div class="main">
+
+    <!-- Menu trái -->
+    <div class="left">
+        <ul>
+            <li>Trang chủ</li>
+            <li>Tin tức</li>
+            <li>Hộp thư</li>
+            <li>Góc thư giãn</li>
+            <li>Hoa - Cây cảnh</li>
+        </ul>
+    </div>
+
+    <!-- Nội dung -->
+    <div class="content">
+        <h3>Welcome to Hoa cảnh</h3>
+        <h2>ĐĂNG KÝ MUA HOA</h2>
+
+        <div class="row">Họ tên: <input type="text"></div>
+        <div class="row">Địa chỉ: <input type="text"></div>
+        <div class="row">Điện thoại: <input type="text"></div>
+        <div class="row">Email: <input type="text"></div>
+
+        <div class="row">
+            Loại hoa:
+            <select>
+                <option>Hoa Hồng</option>
+                <option>Hoa Lan</option>
+            </select>
+        </div>
+
+        <div class="row">
+            Màu:
+            <select>
+                <option>Đỏ</option>
+                <option>Trắng</option>
+            </select>
+        </div>
+
+        <div class="row">Số lượng: <input type="text"></div>
+
+        <div class="row">
+            Đơn vị tính:
+            <input type="radio" name="dv"> Nhánh
+            <input type="radio" name="dv"> Bó
+            <input type="radio" name="dv"> Chậu
+        </div>
+
+        <div class="row">
+            Thanh toán:
+            <input type="radio" name="tt"> Tiền mặt
+            <input type="radio" name="tt"> Chuyển khoản
+            <input type="radio" name="tt"> MasterCard
+        </div>
+
+        <div class="row">
+            Yêu cầu:
+            <textarea></textarea>
+        </div>
+
+        <button>Đăng ký</button>
+        <button type="reset">Nhập lại</button>
+    </div>
+
+    <!-- Ảnh phải -->
+    <div class="right">
+        <img src="https://i.imgur.com/7yUvePI.png" width="150">
+    </div>
+
+</div>
+
+</body>
+</html>
